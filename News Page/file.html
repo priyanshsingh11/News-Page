@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful News App</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-btn" id="backButton" onclick="goBack()">⬅ Back to Home</button>  
+        <h1 class="title">🚀 Trending News</h1>
+        <div class="tabs">
+            <button onclick="fetchNews('tesla')">🚗 Tesla</button>
+            <button onclick="fetchNews('apple')">🍏 Apple</button>
+            <button onclick="fetchNews('us')">US Business</button>
+            <button onclick="fetchNews('techcrunch')">💻 TechCrunch</button>
+        </div>
+        <div class="news-container" id="news">
+            <p class="loading-text">Click on a category to load news...</p>
+        </div>
+    </div>
+
+    <script src="file.js"></script>
+</body>
+</html>
